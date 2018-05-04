@@ -1,4 +1,4 @@
-const app = require('./app/app')
+const { App } = require('./app/app')
 
-app.listen(3000)
+App.listen(3000)
 console.log('app started at port 3000...')

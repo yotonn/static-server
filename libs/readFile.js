@@ -1,13 +1,11 @@
 
 let fs = require('fs')
-let path = require('path')
 
-const current_path = process.cwd()
-const FileReader = file => {
+const FileReader = file_path => {
     return new Promise((resolve, reject) => {
-        fs.readFile(path.resolve(current_path, file), (err, data) => {
+        fs.readFile(file_path, (err, data) => {
             if (err !== null) reject(err)
-            resolve(data.toString())
+            resolve(data)
         })
     })
 }

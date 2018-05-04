@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.5.1",
-    "koa-static": "^4.0.2"
+    "escape-string-regexp": "^1.0.5",
+    "koa": "^2.5.1"
   }
 }
